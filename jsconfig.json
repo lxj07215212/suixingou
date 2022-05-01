@@ -1,0 +1,16 @@
+// src文件夹简写方式（路径的简写方式），配置别名
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*":[
+                "src/*"
+            ]
+        }
+    },
+    // 不能在node_modules、dist（打包文件）文件夹中使用
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
